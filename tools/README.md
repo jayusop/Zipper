@@ -48,17 +48,21 @@ python3 tools/build.py
 
 ## 새 버전 올리기
 
-1. 앱을 Release로 빌드합니다.
+1. 앱을 **유니버설(Apple Silicon + Intel)** 로 Release 빌드합니다. 한 앱이 두 CPU에서 모두 네이티브로 실행되므로 배포 파일은 하나면 됩니다.
    ```sh
    cd ~/Develop/zipper
-   xcodebuild -project Zipper.xcodeproj -scheme Zipper -configuration Release build
+   xcodebuild -project Zipper.xcodeproj -scheme "Zipper (Universal)" -configuration Release build
    ```
-2. 빌드된 `Zipper.app`을 압축합니다(빌드 위치는 Xcode › Product › Show Build Folder).
+   결과물은 Xcode 빌드 폴더의 `Build/Products/Release/Zipper.app`입니다(Xcode › Product › Show Build Folder).
+   `lipo -info Zipper.app/Contents/MacOS/Zipper`에 `x86_64 arm64`가 함께 나오면 됩니다.
+   > `Zipper (Apple Silicon)`·`Zipper (Intel)` 스킴은 확인용입니다. Intel 전용 빌드는 macOS 28부터 Apple Silicon Mac에서 실행되지 않으니 배포하지 마세요.
+2. 압축합니다.
    ```sh
    ditto -c -k --keepParent Zipper.app Zipper.app.zip
    ```
-3. GitHub **Releases → Draft a new release**에서 태그(예: `v0.1.0`)를 만들고 `Zipper.app.zip`을 첨부해 게시합니다.
+3. GitHub **Releases → Draft a new release**에서 태그(예: `v1.0.0`)를 만들고 `Zipper.app.zip`을 첨부해 게시합니다.
    소개 페이지와 README의 다운로드 버튼은 `releases/latest`로 연결되므로 고칠 필요가 없습니다.
+4. 버전이 바뀌었다면 `tools/build.py`의 `VERSION`을 고치고 `python3 tools/build.py`를 실행한 뒤 함께 커밋합니다.
 
 ## 검색엔진 등록
 

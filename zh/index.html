@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zipper — 免费的 Mac 压缩软件（支持 ZIP、7Z、RAR、EGG、ALZ）</title>
+<meta name="description" content="Zipper 是一款免费的 macOS 压缩/解压软件。可创建 ZIP、7Z、TAR，并解压 RAR、EGG、ALZ、ISO 等 30 多种格式，文件名在 Windows 上也不会乱码。">
+<meta name="keywords" content="Mac 压缩软件, Mac 解压, Mac RAR, Mac 7z, 文件名乱码, 免费 解压 Mac, Zipper">
+<link rel="canonical" href="https://jayusop.github.io/Zipper/zh/">
+<link rel="alternate" hreflang="ko" href="https://jayusop.github.io/Zipper/">
+<link rel="alternate" hreflang="en" href="https://jayusop.github.io/Zipper/en/">
+<link rel="alternate" hreflang="zh-Hans" href="https://jayusop.github.io/Zipper/zh/">
+<link rel="alternate" hreflang="ja" href="https://jayusop.github.io/Zipper/ja/">
+<link rel="alternate" hreflang="x-default" href="https://jayusop.github.io/Zipper/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zipper">
+<meta property="og:title" content="Zipper — 免费的 Mac 压缩软件（支持 ZIP、7Z、RAR、EGG、ALZ）">
+<meta property="og:description" content="Zipper 是一款免费的 macOS 压缩/解压软件。可创建 ZIP、7Z、TAR，并解压 RAR、EGG、ALZ、ISO 等 30 多种格式，文件名在 Windows 上也不会乱码。">
+<meta property="og:url" content="https://jayusop.github.io/Zipper/zh/">
+<meta property="og:image" content="https://jayusop.github.io/Zipper/assets/icon.png">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14204a">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Zipper", "operatingSystem": "macOS 12+", "applicationCategory": "UtilitiesApplication", "softwareVersion": "1.0.0", "description": "Zipper 是一款免费的 macOS 压缩/解压软件。可创建 ZIP、7Z、TAR，并解压 RAR、EGG、ALZ、ISO 等 30 多种格式，文件名在 Windows 上也不会乱码。", "url": "https://jayusop.github.io/Zipper/zh/", "downloadUrl": "https://github.com/jayusop/Zipper/releases/latest", "image": "https://jayusop.github.io/Zipper/assets/icon.png", "inLanguage": "zh-Hans", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "真的免费吗？", "acceptedAnswer": {"@type": "Answer", "text": "是的。个人和企业均可免费使用。"}}, {"@type": "Question", "name": "能解压 ALZ 和 EGG 吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以，包括分卷 ALZ（.a00、.a01…）、加密文件，以及采用 AES/LEA 加密、固实压缩和分卷的 EGG。不支持创建 ALZ 或 EGG。"}}, {"@type": "Question", "name": "在 Windows 上解压时文件名会乱码吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。Zipper 按 Windows 期望的方式（NFC 并带 UTF-8 标志）保存文件名，在文件资源管理器中可正确显示。"}}, {"@type": "Question", "name": "能创建 RAR 吗？", "acceptedAnswer": {"@type": "Answer", "text": "RAR 仅支持打开和解压。创建时请使用 ZIP 或 7Z。"}}, {"@type": "Question", "name": "会联网或上传我的文件吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。所有操作都在你的 Mac 上完成。"}}, {"@type": "Question", "name": "如何切换语言？", "acceptedAnswer": {"@type": "Answer", "text": "默认跟随系统语言。可在 偏好设置 → 通用 → 语言 中更改，立即生效。"}}, {"@type": "Question", "name": "会公开源代码吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。Zipper 是只发布可执行应用的免费软件，不公开源代码。"}}]}</script>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="#top"><img src="../assets/favicon-32.png" alt="" width="30" height="30">Zipper</a>
+  <nav><a href="#features">功能</a><a href="#formats">支持格式</a><a href="#install">安装</a><a href="#faq">常见问题</a><a href="#license">许可证</a></nav>
+  <div class="lang"><a href="../" hreflang="ko">한국어</a><a href="../en/" hreflang="en">English</a><a href="../zh/" hreflang="zh-Hans" aria-current="page">中文</a><a href="../ja/" hreflang="ja">日本語</a></div>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Mac 上的压缩与解压，<br>交给 <span class="accent">Zipper</span></h1>
+    <p class="lead">创建 ZIP 和 7Z，打开 RAR、EGG、ALZ 等格式。文件名不会乱码，与 Windows 用户互传也毫无顾虑。</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://github.com/jayusop/Zipper/releases/latest">⬇ 免费下载</a>
+      <a class="btn btn-ghost" href="https://github.com/jayusop/Zipper">在 GitHub 上查看</a>
+    </div>
+    <div class="meta">版本 1.0.0 · macOS 12 Monterey 或更高版本 · Apple Silicon / Intel</div>
+  </div>
+  <img class="icon" src="../assets/icon.png" alt="Zipper" width="512" height="512">
+</div></div>
+
+<section id="features"><div class="wrap">
+  <h2>主要功能</h2>
+  <p class="sub">常用操作一键完成，详细设置按需使用。</p>
+  <div class="grid"><div class="card"><div class="ico">🗜️</div><h3>创建、解压与编辑</h3><p>创建和解压 ZIP、7Z、TAR、GZ。拖到窗口即可——压缩文件会被打开，其他文件会被压缩。无需解压即可编辑 ZIP。</p></div><div class="card"><div class="ico">📂</div><h3>支持 30 多种格式</h3><p>RAR、EGG、ALZ、ISO、CAB、LZH 以及许多旧格式，收到的压缩文件大多可以直接打开。</p></div><div class="card"><div class="ico">🔤</div><h3>文件名不乱码</h3><p>文件名以合成形式（NFC）保存，并自动识别 GBK、CP949、Shift-JIS 等代码页，Windows 压缩文件也能正确显示。</p></div><div class="card"><div class="ico">🔒</div><h3>AES-256 加密</h3><p>可为 ZIP 和 7Z 设置 AES-256 密码，7Z 还能隐藏文件名。也可解压加密的 EGG（AES/LEA）和 ALZ。</p></div><div class="card"><div class="ico">✨</div><h3>智能解压</h3><p>如果内容都在一个文件夹内则就地解压，否则先创建以压缩文件命名的文件夹，避免文件散落。</p></div><div class="card"><div class="ico">✂️</div><h3>分卷压缩</h3><p>可按邮件附件（25MB）、CD、DVD、FAT32（4GB）等大小分卷，分卷文件也能直接打开。</p></div><div class="card"><div class="ico">🧪</div><h3>完整性测试与校验和</h3><p>检测压缩文件是否损坏，并查看任意文件的 CRC32、MD5、SHA-1、SHA-256。</p></div><div class="card"><div class="ico">🧹</div><h3>干净的压缩包</h3><p>自动排除 .DS_Store、__MACOSX 和资源分支，压缩包在 Windows 上也干净整洁。</p></div><div class="card"><div class="ico">🌐</div><h3>4 种语言 · 深色模式</h3><p>支持韩语、英语、中文和日语，默认跟随系统语言。可选浅色/深色主题。</p></div></div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <figure class="shot" style="margin:0 auto">
+    <img src="../assets/screenshot-start.png" alt="开始界面 — 打开压缩文件、新建压缩文件、拖放文件、快速 ZIP/7Z 压缩集中在一处" width="1952" height="1324" loading="lazy"></figure>
+  <p class="caption">开始界面 — 打开压缩文件、新建压缩文件、拖放文件、快速 ZIP/7Z 压缩集中在一处</p>
+</div></section>
+
+<section id="formats"><div class="wrap">
+  <h2>支持格式</h2>
+  <p class="sub">分为可创建的格式和可打开、解压的格式。</p>
+  <div class="formats">
+    <div class="card"><h3>创建 · 解压 · 测试</h3><div class="chips"><span class="chip w">ZIP</span><span class="chip w">7Z</span><span class="chip w">TAR</span><span class="chip w">TGZ</span><span class="chip w">TBZ</span><span class="chip w">TXZ</span><span class="chip w">GZ</span></div></div>
+    <div class="card"><h3>打开 · 解压 · 测试</h3><div class="chips"><span class="chip">RAR / RAR5</span><span class="chip">EGG</span><span class="chip">ALZ</span><span class="chip">ISO</span><span class="chip">UDF</span><span class="chip">BIN</span><span class="chip">IMG (FAT)</span><span class="chip">CAB</span><span class="chip">MSI</span><span class="chip">LZH / LHA</span><span class="chip">ARJ</span><span class="chip">ACE</span><span class="chip">ARC</span><span class="chip">ZOO</span><span class="chip">HA</span><span class="chip">BZ2</span><span class="chip">XZ</span><span class="chip">ZST</span><span class="chip">LZMA</span><span class="chip">LZ</span><span class="chip">Z</span><span class="chip">AES</span><span class="chip">TZST</span><span class="chip">TLZ</span><span class="chip">TAZ</span><span class="chip">EXE (SFX)</span><span class="chip">JAR / APK / IPA / EPUB</span></div></div>
+  </div>
+  <p class="note">ZIP 文件可直接编辑而无需解压。也可打开分卷压缩（.001、.z01、.a00、.vol1.egg、RAR 分卷）以及 EXE 自解压文件中的 ZIP/7Z/RAR/ALZ/EGG。</p>
+</div></section>
+
+<section id="install" class="alt"><div class="wrap">
+  <h2>安装方法</h2>
+  <p class="sub">只需将应用移到“应用程序”文件夹。</p>
+  <div class="req"><span>macOS 12 或更高版本</span><span>通用版：Apple Silicon · Intel</span><span>免费</span></div>
+  <ol class="steps"><li><strong>下载</strong>从 <a href="https://github.com/jayusop/Zipper/releases/latest">GitHub Releases 页面</a>下载最新的 <code>Zipper.app.zip</code> 并解压。</li><li><strong>移到“应用程序”</strong>将 <code>Zipper.app</code> 拖到“应用程序”文件夹。</li><li><strong>首次打开</strong>这是未经 Apple 公证的个人发布应用，首次打开时会出现安全提示。请不要点按 <strong>移到废纸篓</strong>，点按 <strong>完成</strong>（macOS 14 及更早版本为 <strong>取消</strong>）关闭，然后在 <code>系统设置 → 隐私与安全性</code> 底部点按 <strong>仍要打开</strong>。</li></ol>
+  <p class="note">如果使用终端，也可以运行这一行命令：</p>
+  <pre>xattr -dr com.apple.quarantine /Applications/Zipper.app</pre>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2>常见问题</h2>
+  <details><summary>真的免费吗？</summary><p>是的。个人和企业均可免费使用。</p></details><details><summary>能解压 ALZ 和 EGG 吗？</summary><p>可以，包括分卷 ALZ（.a00、.a01…）、加密文件，以及采用 AES/LEA 加密、固实压缩和分卷的 EGG。不支持创建 ALZ 或 EGG。</p></details><details><summary>在 Windows 上解压时文件名会乱码吗？</summary><p>不会。Zipper 按 Windows 期望的方式（NFC 并带 UTF-8 标志）保存文件名，在文件资源管理器中可正确显示。</p></details><details><summary>能创建 RAR 吗？</summary><p>RAR 仅支持打开和解压。创建时请使用 ZIP 或 7Z。</p></details><details><summary>会联网或上传我的文件吗？</summary><p>不会。所有操作都在你的 Mac 上完成。</p></details><details><summary>如何切换语言？</summary><p>默认跟随系统语言。可在 偏好设置 → 通用 → 语言 中更改，立即生效。</p></details><details><summary>会公开源代码吗？</summary><p>不会。Zipper 是只发布可执行应用的免费软件，不公开源代码。</p></details>
+</div></section>
+<section id="license" class="alt"><div class="wrap">
+  <h2>许可证</h2>
+  <p class="sub">个人和企业均可完全免费使用的免费软件。无需付费、注册或许可证密钥。</p>
+  <div class="grid grid-4"><div class="card"><div class="ico">✅</div><h3>人人免费</h3><p>个人、家庭以及公司、机构、学校等商业用途均可使用，不限台数。</p></div><div class="card"><div class="ico">📦</div><h3>允许再分发</h3><p>可将未经修改的原版连同许可证一起免费再分发。</p></div><div class="card"><div class="ico">🚫</div><h3>禁止逆向工程</h3><p>唯一的限制：禁止反编译、反汇编、修改或修补应用（法律允许的情形除外）。</p></div><div class="card"><div class="ico">🛡️</div><h3>不收集数据</h3><p>Zipper 不联网，不收集任何信息。按“原样”提供，不作任何保证。</p></div></div>
+  <p class="note"><a href="https://github.com/jayusop/Zipper/blob/main/LICENSE">查看许可证全文</a> · <a href="https://github.com/jayusop/Zipper/blob/main/LICENSE.ko.md">韩语译本</a></p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>© 2026 jayusop · Freeware</span>
+  <span>Zipper 包含开源软件。许可证声明可在应用的 偏好设置 → 许可证 中查看。</span>
+  <span class="right"><a href="https://github.com/jayusop/Zipper/blob/main/LICENSE">许可证</a><a href="https://github.com/jayusop/Zipper/releases">版本发布</a><a href="https://github.com/jayusop/Zipper/issues">报告问题</a></span>
+</div></footer>
+</body>
+</html>

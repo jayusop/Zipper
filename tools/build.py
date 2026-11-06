@@ -9,7 +9,7 @@ REPO = "Zipper"
 SITE = f"https://{GITHUB_USER}.github.io/{REPO}/"
 REPO_URL = f"https://github.com/{GITHUB_USER}/{REPO}"
 DOWNLOAD = f"{REPO_URL}/releases/latest"
-VERSION = "0.1.0"
+VERSION = "1.0.0"
 
 WRITE = ["ZIP", "7Z", "TAR", "TGZ", "TBZ", "TXZ", "GZ"]
 READ = ["RAR / RAR5", "EGG", "ALZ", "ISO", "UDF", "BIN", "IMG (FAT)", "CAB", "MSI", "LZH / LHA",
@@ -33,7 +33,7 @@ T = {
   meta=f"버전 {VERSION} · macOS 12 Monterey 이상 · Apple Silicon / Intel",
   f_h="주요 기능", f_sub="자주 쓰는 일은 한 번의 클릭으로, 세세한 설정은 필요할 때만.",
   features=[
-    ("🗜️", "만들고 풀고 편집하기", "ZIP, 7Z, TAR, GZ 압축 파일을 만들고 풉니다. ZIP은 풀지 않고도 파일 추가·삭제·이름 바꾸기가 가능합니다."),
+    ("🗜️", "만들고 풀고 편집하기", "ZIP, 7Z, TAR, GZ를 만들고 풉니다. 창에 끌어다 놓으면 압축 파일은 열고 다른 파일은 압축하며, ZIP은 풀지 않고도 파일 추가·삭제·이름 바꾸기가 됩니다."),
     ("📂", "30여 가지 형식 열기", "RAR, EGG, ALZ, ISO, CAB, LZH 등 오래된 형식과 국내 형식까지, 받은 압축 파일을 대부분 바로 엽니다."),
     ("🇰🇷", "한글 파일명 깨짐 방지", "Mac의 분리된 자모(NFD)를 합쳐서(NFC) 저장하고, CP949 등 코드페이지를 자동 감지해 Windows 압축 파일도 올바르게 보여줍니다."),
     ("🔒", "AES-256 암호화", "ZIP과 7Z에 AES-256 암호를 걸 수 있고, 7Z는 파일 이름까지 숨길 수 있습니다. 암호화된 EGG(AES/LEA)·ALZ도 풉니다."),
@@ -43,7 +43,7 @@ T = {
     ("🧹", "깔끔한 압축", ".DS_Store, __MACOSX, 리소스 포크 같은 Mac 전용 파일을 빼고 압축해 Windows에서도 깔끔하게 보입니다."),
     ("🌐", "4개 언어 · 다크 모드", "한국어, 영어, 중국어, 일본어를 지원하며 시스템 언어를 따릅니다. 라이트/다크 테마를 고를 수 있습니다."),
   ],
-  s_cap="시작 화면 — 압축 파일 열기, 바로 압축하기, 도움말을 한곳에서",
+  s_cap="시작 화면 — 압축 파일 열기, 새 압축 파일, 끌어다 놓기, 빠른 ZIP·7Z 압축을 한곳에서",
   fm_h="지원 형식", fm_sub="만들기와 풀기를 모두 지원하는 형식, 열고 풀 수 있는 형식으로 나뉩니다.",
   fm_w="만들기 · 풀기 · 테스트", fm_r="열기 · 풀기 · 테스트",
   fm_note="ZIP 파일은 압축을 풀지 않고 바로 편집할 수 있습니다. 분할 압축(.001, .z01, .a00, .vol1.egg, RAR 볼륨)과 EXE 자동 풀림 파일 안의 ZIP/7Z/RAR/ALZ/EGG도 열 수 있습니다.",
@@ -78,7 +78,7 @@ T = {
   meta=f"Version {VERSION} · macOS 12 Monterey or later · Apple Silicon / Intel",
   f_h="Features", f_sub="Everyday tasks in one click; detailed settings only when you need them.",
   features=[
-    ("🗜️", "Create, extract, edit", "Create and extract ZIP, 7Z, TAR and GZ archives. Add, delete and rename files inside a ZIP without unpacking it."),
+    ("🗜️", "Create, extract, edit", "Create and extract ZIP, 7Z, TAR and GZ. Drop files on the window — archives open, other files are compressed. Edit a ZIP without unpacking it."),
     ("📂", "Opens 30+ formats", "RAR, EGG, ALZ, ISO, CAB, LZH and many legacy formats — most archives you receive open right away."),
     ("🔤", "No garbled file names", "Names are stored in composed Unicode (NFC) and code pages such as CP949 or Shift-JIS are detected automatically, so Windows archives read correctly."),
     ("🔒", "AES-256 encryption", "Protect ZIP and 7Z archives with AES-256; 7Z can hide file names too. Encrypted EGG (AES/LEA) and ALZ archives extract as well."),
@@ -88,7 +88,7 @@ T = {
     ("🧹", "Clean archives", "Leaves out .DS_Store, __MACOSX and resource forks, so your archives look tidy on Windows."),
     ("🌐", "4 languages · Dark mode", "Korean, English, Chinese and Japanese, following your system language. Light and dark themes."),
   ],
-  s_cap="Start screen — open an archive, compress in one click, and quick help",
+  s_cap="Start screen — open an archive, create one, drop files, or Quick ZIP / 7Z in one click",
   fm_h="Supported formats", fm_sub="Formats Zipper can create, and formats it can open and extract.",
   fm_w="Create · Extract · Test", fm_r="Open · Extract · Test",
   fm_note="ZIP archives can be edited in place. Split archives (.001, .z01, .a00, .vol1.egg, RAR volumes) and ZIP/7Z/RAR/ALZ/EGG inside EXE self-extractors also open.",
@@ -123,7 +123,7 @@ T = {
   meta=f"版本 {VERSION} · macOS 12 Monterey 或更高版本 · Apple Silicon / Intel",
   f_h="主要功能", f_sub="常用操作一键完成，详细设置按需使用。",
   features=[
-    ("🗜️", "创建、解压与编辑", "创建和解压 ZIP、7Z、TAR、GZ 压缩文件。无需解压即可在 ZIP 中添加、删除和重命名文件。"),
+    ("🗜️", "创建、解压与编辑", "创建和解压 ZIP、7Z、TAR、GZ。拖到窗口即可——压缩文件会被打开，其他文件会被压缩。无需解压即可编辑 ZIP。"),
     ("📂", "支持 30 多种格式", "RAR、EGG、ALZ、ISO、CAB、LZH 以及许多旧格式，收到的压缩文件大多可以直接打开。"),
     ("🔤", "文件名不乱码", "文件名以合成形式（NFC）保存，并自动识别 GBK、CP949、Shift-JIS 等代码页，Windows 压缩文件也能正确显示。"),
     ("🔒", "AES-256 加密", "可为 ZIP 和 7Z 设置 AES-256 密码，7Z 还能隐藏文件名。也可解压加密的 EGG（AES/LEA）和 ALZ。"),
@@ -133,7 +133,7 @@ T = {
     ("🧹", "干净的压缩包", "自动排除 .DS_Store、__MACOSX 和资源分支，压缩包在 Windows 上也干净整洁。"),
     ("🌐", "4 种语言 · 深色模式", "支持韩语、英语、中文和日语，默认跟随系统语言。可选浅色/深色主题。"),
   ],
-  s_cap="开始界面 — 打开压缩文件、一键压缩和帮助集中在一处",
+  s_cap="开始界面 — 打开压缩文件、新建压缩文件、拖放文件、快速 ZIP/7Z 压缩集中在一处",
   fm_h="支持格式", fm_sub="分为可创建的格式和可打开、解压的格式。",
   fm_w="创建 · 解压 · 测试", fm_r="打开 · 解压 · 测试",
   fm_note="ZIP 文件可直接编辑而无需解压。也可打开分卷压缩（.001、.z01、.a00、.vol1.egg、RAR 分卷）以及 EXE 自解压文件中的 ZIP/7Z/RAR/ALZ/EGG。",
@@ -168,7 +168,7 @@ T = {
   meta=f"バージョン {VERSION} · macOS 12 Monterey 以降 · Apple Silicon / Intel",
   f_h="主な機能", f_sub="よく使う操作はワンクリックで、細かい設定は必要なときだけ。",
   features=[
-    ("🗜️", "作成・展開・編集", "ZIP、7Z、TAR、GZ アーカイブを作成・展開できます。ZIP は展開せずにファイルの追加・削除・名前変更ができます。"),
+    ("🗜️", "作成・展開・編集", "ZIP、7Z、TAR、GZ を作成・展開できます。ウインドウにドロップすればアーカイブは開き、その他のファイルは圧縮。ZIP は展開せずに編集できます。"),
     ("📂", "30 以上の形式に対応", "RAR、EGG、ALZ、ISO、CAB、LZH など古い形式まで、受け取ったアーカイブのほとんどをすぐに開けます。"),
     ("🔤", "文字化けしないファイル名", "ファイル名を合成済み Unicode（NFC）で保存し、Shift-JIS や CP949 などのコードページを自動検出。Windows のアーカイブも正しく表示します。"),
     ("🔒", "AES-256 暗号化", "ZIP と 7Z に AES-256 のパスワードを設定でき、7Z ではファイル名も隠せます。暗号化された EGG（AES/LEA）や ALZ も展開できます。"),
@@ -178,7 +178,7 @@ T = {
     ("🧹", "きれいなアーカイブ", ".DS_Store、__MACOSX、リソースフォークを除いて圧縮するので、Windows でもすっきり表示されます。"),
     ("🌐", "4 言語・ダークモード", "日本語、英語、韓国語、中国語に対応し、システムの言語に従います。ライト／ダークテーマを選べます。"),
   ],
-  s_cap="スタート画面 — アーカイブを開く、ワンクリック圧縮、ヘルプをひとまとめに",
+  s_cap="スタート画面 — アーカイブを開く、新規作成、ドロップ、クイック ZIP/7Z 圧縮をひとまとめに",
   fm_h="対応形式", fm_sub="作成できる形式と、開いて展開できる形式があります。",
   fm_w="作成・展開・テスト", fm_r="開く・展開・テスト",
   fm_note="ZIP は展開せずにその場で編集できます。分割アーカイブ（.001、.z01、.a00、.vol1.egg、RAR ボリューム）や、EXE 自己解凍ファイル内の ZIP/7Z/RAR/ALZ/EGG も開けます。",
@@ -223,7 +223,7 @@ EXTRA = {
   r_req="요구 사항: macOS 12 이상 (Apple Silicon / Intel 유니버설)",
   r_lang="🌐 앱 언어는 macOS 시스템 언어를 따릅니다: 한국어, 영어, 중국어(간체), 일본어. 그 외 언어에서는 영어로 표시됩니다.",
   r_install="설치", r_features="기능", r_formats="지원 형식", r_area="영역", r_feat="기능",
-  r_rows=[("압축", "ZIP·7Z·TAR·TGZ·TBZ·TXZ·GZ 만들기, 압축 수준(저장/빠르게/보통/최대), 분할 압축(25MB·CD·DVD·FAT32 등), 제외 필터"),
+  r_rows=[("압축", "ZIP·7Z·TAR·TGZ·TBZ·TXZ·GZ 만들기, 창에 끌어다 놓아 압축, 빠른 ZIP·7Z 압축, 압축 수준(저장/빠르게/보통/최대), 분할 압축(25MB·CD·DVD·FAT32 등), 제외 필터"),
           ("풀기", "30여 가지 형식, 스마트 풀기, 분할 파일·EXE 자동 풀림 파일 열기, 코드페이지 자동 감지"),
           ("편집", "ZIP을 풀지 않고 파일 추가·삭제·이름 바꾸기, 새 폴더"),
           ("보안", "ZIP·7Z AES-256 암호화, 7Z 파일 이름 암호화, 암호화된 EGG(AES/LEA)·ALZ·RAR 풀기"),
@@ -231,6 +231,7 @@ EXTRA = {
           ("기타", "한글 파일명 NFC 저장, .DS_Store·__MACOSX 제외, 라이트/다크 테마, 한국어·영어·중국어·일본어 UI")],
   r_safe="안심하고 쓰세요",
   r_safe_items=["**인터넷에 연결하지 않습니다**: 모든 작업은 Mac 안에서만 이루어지며 파일이나 정보를 외부로 보내지 않습니다.",
+                "**삭제는 휴지통으로**: 삭제한 압축 파일과 파일은 기본으로 휴지통에 옮깁니다(환경설정에서 변경). 휴지통으로 옮기지 못하면 영구 삭제하지 않고 알려 줍니다.",
                 "**Windows와 호환**: 한글 등 비영어 파일 이름이 Windows 탐색기에서도 그대로 보입니다."],
   r_lic_body="**개인·기업 모두 완전 무료**인 프리웨어입니다. 요금, 등록, 라이선스 키가 필요 없습니다.",
   r_lic_list=["개인·가정은 물론 회사·기관·학교 등 업무용·상업적 사용 모두 가능합니다 (대수 제한 없음).",
@@ -260,7 +261,7 @@ EXTRA = {
   r_req="Requirements: macOS 12 or later (Universal: Apple Silicon / Intel)",
   r_lang="🌐 The app follows your macOS language: Korean, English, Chinese (Simplified) or Japanese; English otherwise.",
   r_install="Installation", r_features="Features", r_formats="Supported formats", r_area="Area", r_feat="Features",
-  r_rows=[("Compress", "Create ZIP, 7Z, TAR, TGZ, TBZ, TXZ, GZ; levels Store/Fast/Normal/Maximum; split into parts (25 MB, CD, DVD, FAT32 …); exclude filter"),
+  r_rows=[("Compress", "Create ZIP, 7Z, TAR, TGZ, TBZ, TXZ, GZ; drop files on the window; Quick ZIP / Quick 7Z; levels Store/Fast/Normal/Maximum; split into parts (25 MB, CD, DVD, FAT32 …); exclude filter"),
           ("Extract", "30+ formats, Smart extract, multi-part and EXE self-extracting archives, automatic code-page detection"),
           ("Edit", "Add, delete and rename files inside a ZIP without unpacking; new folder"),
           ("Security", "AES-256 for ZIP and 7Z, encrypted 7Z file names, extract encrypted EGG (AES/LEA), ALZ and RAR"),
@@ -268,6 +269,7 @@ EXTRA = {
           ("Other", "NFC file names, leaves out .DS_Store and __MACOSX, light/dark theme, Korean/English/Chinese/Japanese UI")],
   r_safe="Use it with confidence",
   r_safe_items=["**No internet connection**: everything happens on your Mac; no files or data ever leave it.",
+                "**Deletions go to the Trash**: deleted archives and files are moved to the Trash by default (changeable in Preferences). If that fails, Zipper tells you instead of deleting permanently.",
                 "**Windows-friendly**: non-English file names display correctly in File Explorer."],
   r_lic_body="Zipper is **completely free freeware for individuals and businesses**. No fee, registration or license key.",
   r_lic_list=["Personal, home, business, government and school use are all allowed (any number of computers).",
@@ -297,7 +299,7 @@ EXTRA = {
   r_req="系统要求：macOS 12 或更高版本（通用版：Apple Silicon / Intel）",
   r_lang="🌐 应用语言跟随 macOS 系统语言：韩语、英语、简体中文、日语；其他语言显示为英语。",
   r_install="安装", r_features="功能", r_formats="支持格式", r_area="类别", r_feat="功能",
-  r_rows=[("压缩", "创建 ZIP、7Z、TAR、TGZ、TBZ、TXZ、GZ；压缩级别（存储/快速/标准/最大）；分卷（25MB、CD、DVD、FAT32 等）；排除过滤"),
+  r_rows=[("压缩", "创建 ZIP、7Z、TAR、TGZ、TBZ、TXZ、GZ；拖放到窗口压缩；快速 ZIP/7Z 压缩；压缩级别（存储/快速/标准/最大）；分卷（25MB、CD、DVD、FAT32 等）；排除过滤"),
           ("解压", "30 多种格式、智能解压、分卷与 EXE 自解压文件、自动识别代码页"),
           ("编辑", "无需解压即可在 ZIP 中添加、删除、重命名文件，新建文件夹"),
           ("安全", "ZIP、7Z 的 AES-256 加密，7Z 文件名加密，解压加密的 EGG（AES/LEA）、ALZ、RAR"),
@@ -305,6 +307,7 @@ EXTRA = {
           ("其他", "NFC 文件名、排除 .DS_Store 和 __MACOSX、浅色/深色主题、韩英中日界面")],
   r_safe="放心使用",
   r_safe_items=["**不联网**：所有操作都在你的 Mac 上完成，文件和数据不会外传。",
+                "**删除进入废纸篓**：删除的压缩文件和文件默认移到废纸篓（可在偏好设置中更改）。无法移到废纸篓时会提示，而不会永久删除。",
                 "**兼容 Windows**：非英文文件名在文件资源管理器中正常显示。"],
   r_lic_body="Zipper 是**个人和企业均可完全免费使用**的免费软件。无需付费、注册或许可证密钥。",
   r_lic_list=["个人、家庭以及公司、机构、学校等业务和商业用途均可使用（不限台数）。",
@@ -334,7 +337,7 @@ EXTRA = {
   r_req="動作環境：macOS 12 以降（ユニバーサル：Apple Silicon / Intel）",
   r_lang="🌐 アプリの言語は macOS のシステム言語に従います：韓国語、英語、簡体字中国語、日本語。それ以外は英語で表示されます。",
   r_install="インストール", r_features="機能", r_formats="対応形式", r_area="分類", r_feat="機能",
-  r_rows=[("圧縮", "ZIP・7Z・TAR・TGZ・TBZ・TXZ・GZ の作成、圧縮レベル（無圧縮/高速/標準/最大）、分割圧縮（25MB・CD・DVD・FAT32 など）、除外フィルタ"),
+  r_rows=[("圧縮", "ZIP・7Z・TAR・TGZ・TBZ・TXZ・GZ の作成、ウインドウへのドロップで圧縮、クイック ZIP/7Z 圧縮、圧縮レベル（無圧縮/高速/標準/最大）、分割圧縮（25MB・CD・DVD・FAT32 など）、除外フィルタ"),
           ("展開", "30 以上の形式、スマート展開、分割ファイル・EXE 自己解凍ファイル、コードページ自動検出"),
           ("編集", "ZIP を展開せずにファイルの追加・削除・名前変更、新規フォルダ"),
           ("セキュリティ", "ZIP・7Z の AES-256 暗号化、7Z のファイル名暗号化、暗号化 EGG（AES/LEA）・ALZ・RAR の展開"),
@@ -342,6 +345,7 @@ EXTRA = {
           ("その他", "NFC ファイル名、.DS_Store・__MACOSX の除外、ライト/ダークテーマ、日英韓中 UI")],
   r_safe="安心してお使いください",
   r_safe_items=["**インターネットに接続しません**：すべての処理は Mac の中だけで行われ、ファイルや情報を外部に送りません。",
+                "**削除はゴミ箱へ**：削除したアーカイブやファイルは既定でゴミ箱に移動します（環境設定で変更可）。移動できない場合は完全に削除せず、お知らせします。",
                 "**Windows と互換**：日本語などのファイル名がエクスプローラーでも正しく表示されます。"],
   r_lic_body="Zipper は**個人・法人を問わず完全無料**のフリーウェアです。料金、登録、ライセンスキーは不要です。",
   r_lic_list=["個人・家庭はもちろん、会社・団体・学校などの業務・商用利用も可能です（台数制限なし）。",
@@ -443,8 +447,8 @@ def page(lang):
 </div></section>
 
 <section class="alt"><div class="wrap">
-  <figure class="shot" style="margin:0 auto"><div class="bar"><i></i><i></i><i></i></div>
-    <img src="{p}assets/screenshot-start.png" alt="{e(t["s_cap"])}" width="1402" height="1048" loading="lazy"></figure>
+  <figure class="shot" style="margin:0 auto">
+    <img src="{p}assets/screenshot-start.png" alt="{e(t["s_cap"])}" width="1952" height="1324" loading="lazy"></figure>
   <p class="caption">{e(t["s_cap"])}</p>
 </div></section>
 

@@ -45,7 +45,7 @@ A macOS archive utility that creates ZIP, 7Z and TAR archives and extracts RAR, 
 
 | Area | Features |
 |---|---|
-| Compress | Create ZIP, 7Z, TAR, TGZ, TBZ, TXZ, GZ; levels Store/Fast/Normal/Maximum; split into parts (25 MB, CD, DVD, FAT32 …); exclude filter |
+| Compress | Create ZIP, 7Z, TAR, TGZ, TBZ, TXZ, GZ; drop files on the window; Quick ZIP / Quick 7Z; levels Store/Fast/Normal/Maximum; split into parts (25 MB, CD, DVD, FAT32 …); exclude filter |
 | Extract | 30+ formats, Smart extract, multi-part and EXE self-extracting archives, automatic code-page detection |
 | Edit | Add, delete and rename files inside a ZIP without unpacking; new folder |
 | Security | AES-256 for ZIP and 7Z, encrypted 7Z file names, extract encrypted EGG (AES/LEA), ALZ and RAR |
@@ -62,6 +62,7 @@ ZIP archives can be edited in place. Split archives (.001, .z01, .a00, .vol1.egg
 ## Use it with confidence
 
 - **No internet connection**: everything happens on your Mac; no files or data ever leave it.
+- **Deletions go to the Trash**: deleted archives and files are moved to the Trash by default (changeable in Preferences). If that fails, Zipper tells you instead of deleting permanently.
 - **Windows-friendly**: non-English file names display correctly in File Explorer.
 
 ## License

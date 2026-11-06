@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zipper — Mac용 무료 압축 프로그램 (ZIP·7Z·RAR·EGG·ALZ 지원)</title>
+<meta name="description" content="Zipper는 macOS용 무료 압축·해제 프로그램입니다. ZIP, 7Z, TAR를 만들고 RAR, EGG, ALZ, ISO 등 30여 가지 형식을 풉니다. 한글 파일명 깨짐 없이 Windows와 주고받을 수 있습니다.">
+<meta name="keywords" content="맥 압축 프로그램, Mac 압축 해제, 알집 맥, EGG 압축 풀기 맥, ALZ 맥, RAR 맥, 7z 맥, 한글 파일명 깨짐, Zipper">
+<link rel="canonical" href="https://jayusop.github.io/Zipper/">
+<link rel="alternate" hreflang="ko" href="https://jayusop.github.io/Zipper/">
+<link rel="alternate" hreflang="en" href="https://jayusop.github.io/Zipper/en/">
+<link rel="alternate" hreflang="zh-Hans" href="https://jayusop.github.io/Zipper/zh/">
+<link rel="alternate" hreflang="ja" href="https://jayusop.github.io/Zipper/ja/">
+<link rel="alternate" hreflang="x-default" href="https://jayusop.github.io/Zipper/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Zipper">
+<meta property="og:title" content="Zipper — Mac용 무료 압축 프로그램 (ZIP·7Z·RAR·EGG·ALZ 지원)">
+<meta property="og:description" content="Zipper는 macOS용 무료 압축·해제 프로그램입니다. ZIP, 7Z, TAR를 만들고 RAR, EGG, ALZ, ISO 등 30여 가지 형식을 풉니다. 한글 파일명 깨짐 없이 Windows와 주고받을 수 있습니다.">
+<meta property="og:url" content="https://jayusop.github.io/Zipper/">
+<meta property="og:image" content="https://jayusop.github.io/Zipper/assets/icon.png">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#14204a">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Zipper", "operatingSystem": "macOS 12+", "applicationCategory": "UtilitiesApplication", "softwareVersion": "1.0.0", "description": "Zipper는 macOS용 무료 압축·해제 프로그램입니다. ZIP, 7Z, TAR를 만들고 RAR, EGG, ALZ, ISO 등 30여 가지 형식을 풉니다. 한글 파일명 깨짐 없이 Windows와 주고받을 수 있습니다.", "url": "https://jayusop.github.io/Zipper/", "downloadUrl": "https://github.com/jayusop/Zipper/releases/latest", "image": "https://jayusop.github.io/Zipper/assets/icon.png", "inLanguage": "ko", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "정말 무료인가요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 개인과 회사 모두 무료로 사용할 수 있습니다."}}, {"@type": "Question", "name": "알집(ALZ), EGG 파일도 풀 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "네. 분할된 ALZ(.a00, .a01…), 암호가 걸린 파일, EGG의 AES/LEA 암호화·솔리드·분할 압축도 풉니다. ALZ와 EGG는 만들기는 지원하지 않습니다."}}, {"@type": "Question", "name": "Windows에서 압축을 풀면 한글 이름이 깨지지 않나요?", "acceptedAnswer": {"@type": "Answer", "text": "Zipper는 파일 이름을 Windows가 읽는 방식(NFC, UTF-8 표시)으로 저장하므로 Windows 탐색기에서도 한글 이름이 정상으로 보입니다."}}, {"@type": "Question", "name": "RAR 파일을 만들 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "RAR는 열고 풀기만 지원합니다. 만들 때는 ZIP이나 7Z를 사용하세요."}}, {"@type": "Question", "name": "인터넷에 연결하거나 파일을 어딘가로 보내나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. 모든 작업은 Mac 안에서만 이루어집니다."}}, {"@type": "Question", "name": "언어는 어떻게 바꾸나요?", "acceptedAnswer": {"@type": "Answer", "text": "기본은 시스템 언어를 따릅니다. 환경설정 → 일반 → 언어에서 바꾸면 바로 적용됩니다."}}, {"@type": "Question", "name": "소스 코드도 공개하나요?", "acceptedAnswer": {"@type": "Answer", "text": "아니요. Zipper는 실행 파일(앱)만 배포하는 프리웨어입니다. 소스 코드는 공개하지 않습니다."}}]}</script>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="#top"><img src="assets/favicon-32.png" alt="" width="30" height="30">Zipper</a>
+  <nav><a href="#features">기능</a><a href="#formats">지원 형식</a><a href="#install">설치</a><a href="#faq">자주 묻는 질문</a><a href="#license">라이선스</a></nav>
+  <div class="lang"><a href="" hreflang="ko" aria-current="page">한국어</a><a href="en/" hreflang="en">English</a><a href="zh/" hreflang="zh-Hans">中文</a><a href="ja/" hreflang="ja">日本語</a></div>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Mac에서 압축은<br><span class="accent">Zipper</span> 하나로</h1>
+    <p class="lead">ZIP·7Z를 만들고, RAR·EGG·ALZ까지 그대로 풉니다. 한글 파일명이 깨지지 않아 Windows 사용자와 주고받기에도 걱정 없습니다.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://github.com/jayusop/Zipper/releases/latest">⬇ 무료 다운로드</a>
+      <a class="btn btn-ghost" href="https://github.com/jayusop/Zipper">GitHub에서 보기</a>
+    </div>
+    <div class="meta">버전 1.0.0 · macOS 12 Monterey 이상 · Apple Silicon / Intel</div>
+  </div>
+  <img class="icon" src="assets/icon.png" alt="Zipper" width="512" height="512">
+</div></div>
+
+<section id="features"><div class="wrap">
+  <h2>주요 기능</h2>
+  <p class="sub">자주 쓰는 일은 한 번의 클릭으로, 세세한 설정은 필요할 때만.</p>
+  <div class="grid"><div class="card"><div class="ico">🗜️</div><h3>만들고 풀고 편집하기</h3><p>ZIP, 7Z, TAR, GZ를 만들고 풉니다. 창에 끌어다 놓으면 압축 파일은 열고 다른 파일은 압축하며, ZIP은 풀지 않고도 파일 추가·삭제·이름 바꾸기가 됩니다.</p></div><div class="card"><div class="ico">📂</div><h3>30여 가지 형식 열기</h3><p>RAR, EGG, ALZ, ISO, CAB, LZH 등 오래된 형식과 국내 형식까지, 받은 압축 파일을 대부분 바로 엽니다.</p></div><div class="card"><div class="ico">🇰🇷</div><h3>한글 파일명 깨짐 방지</h3><p>Mac의 분리된 자모(NFD)를 합쳐서(NFC) 저장하고, CP949 등 코드페이지를 자동 감지해 Windows 압축 파일도 올바르게 보여줍니다.</p></div><div class="card"><div class="ico">🔒</div><h3>AES-256 암호화</h3><p>ZIP과 7Z에 AES-256 암호를 걸 수 있고, 7Z는 파일 이름까지 숨길 수 있습니다. 암호화된 EGG(AES/LEA)·ALZ도 풉니다.</p></div><div class="card"><div class="ico">✨</div><h3>스마트 풀기</h3><p>내용이 한 폴더에 들어 있으면 그 자리에, 아니면 압축 파일 이름의 새 폴더에 풀어 파일이 흩어지지 않습니다.</p></div><div class="card"><div class="ico">✂️</div><h3>분할 압축</h3><p>메일 첨부(25MB), CD, DVD, FAT32(4GB) 등 원하는 크기로 나눠 압축하고, 분할된 파일도 그대로 엽니다.</p></div><div class="card"><div class="ico">🧪</div><h3>무결성 테스트 · 체크섬</h3><p>압축 파일이 손상되지 않았는지 테스트하고, 어떤 파일이든 CRC32·MD5·SHA-1·SHA-256 값을 확인합니다.</p></div><div class="card"><div class="ico">🧹</div><h3>깔끔한 압축</h3><p>.DS_Store, __MACOSX, 리소스 포크 같은 Mac 전용 파일을 빼고 압축해 Windows에서도 깔끔하게 보입니다.</p></div><div class="card"><div class="ico">🌐</div><h3>4개 언어 · 다크 모드</h3><p>한국어, 영어, 중국어, 일본어를 지원하며 시스템 언어를 따릅니다. 라이트/다크 테마를 고를 수 있습니다.</p></div></div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <figure class="shot" style="margin:0 auto">
+    <img src="assets/screenshot-start.png" alt="시작 화면 — 압축 파일 열기, 새 압축 파일, 끌어다 놓기, 빠른 ZIP·7Z 압축을 한곳에서" width="1952" height="1324" loading="lazy"></figure>
+  <p class="caption">시작 화면 — 압축 파일 열기, 새 압축 파일, 끌어다 놓기, 빠른 ZIP·7Z 압축을 한곳에서</p>
+</div></section>
+
+<section id="formats"><div class="wrap">
+  <h2>지원 형식</h2>
+  <p class="sub">만들기와 풀기를 모두 지원하는 형식, 열고 풀 수 있는 형식으로 나뉩니다.</p>
+  <div class="formats">
+    <div class="card"><h3>만들기 · 풀기 · 테스트</h3><div class="chips"><span class="chip w">ZIP</span><span class="chip w">7Z</span><span class="chip w">TAR</span><span class="chip w">TGZ</span><span class="chip w">TBZ</span><span class="chip w">TXZ</span><span class="chip w">GZ</span></div></div>
+    <div class="card"><h3>열기 · 풀기 · 테스트</h3><div class="chips"><span class="chip">RAR / RAR5</span><span class="chip">EGG</span><span class="chip">ALZ</span><span class="chip">ISO</span><span class="chip">UDF</span><span class="chip">BIN</span><span class="chip">IMG (FAT)</span><span class="chip">CAB</span><span class="chip">MSI</span><span class="chip">LZH / LHA</span><span class="chip">ARJ</span><span class="chip">ACE</span><span class="chip">ARC</span><span class="chip">ZOO</span><span class="chip">HA</span><span class="chip">BZ2</span><span class="chip">XZ</span><span class="chip">ZST</span><span class="chip">LZMA</span><span class="chip">LZ</span><span class="chip">Z</span><span class="chip">AES</span><span class="chip">TZST</span><span class="chip">TLZ</span><span class="chip">TAZ</span><span class="chip">EXE (SFX)</span><span class="chip">JAR / APK / IPA / EPUB</span></div></div>
+  </div>
+  <p class="note">ZIP 파일은 압축을 풀지 않고 바로 편집할 수 있습니다. 분할 압축(.001, .z01, .a00, .vol1.egg, RAR 볼륨)과 EXE 자동 풀림 파일 안의 ZIP/7Z/RAR/ALZ/EGG도 열 수 있습니다.</p>
+</div></section>
+
+<section id="install" class="alt"><div class="wrap">
+  <h2>설치 방법</h2>
+  <p class="sub">다운로드한 앱을 응용 프로그램 폴더로 옮기기만 하면 됩니다.</p>
+  <div class="req"><span>macOS 12 이상</span><span>Apple Silicon · Intel 유니버설</span><span>무료</span></div>
+  <ol class="steps"><li><strong>다운로드</strong><a href="https://github.com/jayusop/Zipper/releases/latest">GitHub 릴리스 페이지</a>에서 최신 <code>Zipper.app.zip</code>을 내려받아 압축을 풉니다.</li><li><strong>응용 프로그램 폴더로 옮기기</strong><code>Zipper.app</code>을 <code>응용 프로그램</code> 폴더로 드래그합니다.</li><li><strong>처음 한 번 열기</strong>Apple 공증을 받지 않은 개인 배포 앱이라 처음 열 때 보안 경고가 뜹니다. <strong>휴지통으로 이동</strong>은 누르지 말고 <strong>완료</strong>(macOS 14 이하는 <strong>취소</strong>)로 닫은 뒤, <code>시스템 설정 → 개인정보 보호 및 보안</code> 아래쪽의 <strong>그래도 열기</strong>를 클릭하세요.</li></ol>
+  <p class="note">터미널을 쓴다면 다음 명령 한 줄로도 됩니다.</p>
+  <pre>xattr -dr com.apple.quarantine /Applications/Zipper.app</pre>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2>자주 묻는 질문</h2>
+  <details><summary>정말 무료인가요?</summary><p>네. 개인과 회사 모두 무료로 사용할 수 있습니다.</p></details><details><summary>알집(ALZ), EGG 파일도 풀 수 있나요?</summary><p>네. 분할된 ALZ(.a00, .a01…), 암호가 걸린 파일, EGG의 AES/LEA 암호화·솔리드·분할 압축도 풉니다. ALZ와 EGG는 만들기는 지원하지 않습니다.</p></details><details><summary>Windows에서 압축을 풀면 한글 이름이 깨지지 않나요?</summary><p>Zipper는 파일 이름을 Windows가 읽는 방식(NFC, UTF-8 표시)으로 저장하므로 Windows 탐색기에서도 한글 이름이 정상으로 보입니다.</p></details><details><summary>RAR 파일을 만들 수 있나요?</summary><p>RAR는 열고 풀기만 지원합니다. 만들 때는 ZIP이나 7Z를 사용하세요.</p></details><details><summary>인터넷에 연결하거나 파일을 어딘가로 보내나요?</summary><p>아니요. 모든 작업은 Mac 안에서만 이루어집니다.</p></details><details><summary>언어는 어떻게 바꾸나요?</summary><p>기본은 시스템 언어를 따릅니다. 환경설정 → 일반 → 언어에서 바꾸면 바로 적용됩니다.</p></details><details><summary>소스 코드도 공개하나요?</summary><p>아니요. Zipper는 실행 파일(앱)만 배포하는 프리웨어입니다. 소스 코드는 공개하지 않습니다.</p></details>
+</div></section>
+<section id="license" class="alt"><div class="wrap">
+  <h2>라이선스</h2>
+  <p class="sub">개인·기업 모두 완전 무료인 프리웨어입니다. 요금, 등록, 라이선스 키가 필요 없습니다.</p>
+  <div class="grid grid-4"><div class="card"><div class="ico">✅</div><h3>누구나 무료</h3><p>개인·가정은 물론 회사·기관·학교 등 업무용·상업적 사용 모두 가능합니다(대수 제한 없음).</p></div><div class="card"><div class="ico">📦</div><h3>재배포 가능</h3><p>수정하지 않은 원본을 라이선스와 함께 무료로 재배포할 수 있습니다.</p></div><div class="card"><div class="ico">🚫</div><h3>리버스 엔지니어링 금지</h3><p>유일한 제한입니다. 디컴파일·디스어셈블, 실행 파일 수정·패치를 금지합니다(법이 허용하는 예외는 제외).</p></div><div class="card"><div class="ico">🛡️</div><h3>개인정보 수집 없음</h3><p>인터넷에 연결하지 않으며 어떤 정보도 수집·전송하지 않습니다. &quot;있는 그대로&quot; 제공되며 보증하지 않습니다.</p></div></div>
+  <p class="note"><a href="https://github.com/jayusop/Zipper/blob/main/LICENSE">라이선스 전문 보기</a> · <a href="https://github.com/jayusop/Zipper/blob/main/LICENSE.ko.md">한국어 번역</a></p>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>© 2026 jayusop · Freeware</span>
+  <span>Zipper에는 오픈 소스 소프트웨어가 포함되어 있습니다. 라이센스 고지는 앱의 환경설정 → 라이센스에서 볼 수 있습니다.</span>
+  <span class="right"><a href="https://github.com/jayusop/Zipper/blob/main/LICENSE">라이선스</a><a href="https://github.com/jayusop/Zipper/releases">릴리스</a><a href="https://github.com/jayusop/Zipper/issues">문제 신고</a></span>
+</div></footer>
+</body>
+</html>

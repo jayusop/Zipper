@@ -24,7 +24,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Zipper", "operatingSystem": "macOS 12+", "applicationCategory": "UtilitiesApplication", "softwareVersion": "0.1.0", "description": "Zipper 是一款免费的 macOS 压缩/解压软件。可创建 ZIP、7Z、TAR，并解压 RAR、EGG、ALZ、ISO 等 30 多种格式，文件名在 Windows 上也不会乱码。", "url": "https://jayusop.github.io/Zipper/zh/", "downloadUrl": "https://github.com/jayusop/Zipper/releases/latest", "image": "https://jayusop.github.io/Zipper/assets/icon.png", "inLanguage": "zh-Hans", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Zipper", "operatingSystem": "macOS 12+", "applicationCategory": "UtilitiesApplication", "softwareVersion": "1.0.0", "description": "Zipper 是一款免费的 macOS 压缩/解压软件。可创建 ZIP、7Z、TAR，并解压 RAR、EGG、ALZ、ISO 等 30 多种格式，文件名在 Windows 上也不会乱码。", "url": "https://jayusop.github.io/Zipper/zh/", "downloadUrl": "https://github.com/jayusop/Zipper/releases/latest", "image": "https://jayusop.github.io/Zipper/assets/icon.png", "inLanguage": "zh-Hans", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "真的免费吗？", "acceptedAnswer": {"@type": "Answer", "text": "是的。个人和企业均可免费使用。"}}, {"@type": "Question", "name": "能解压 ALZ 和 EGG 吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以，包括分卷 ALZ（.a00、.a01…）、加密文件，以及采用 AES/LEA 加密、固实压缩和分卷的 EGG。不支持创建 ALZ 或 EGG。"}}, {"@type": "Question", "name": "在 Windows 上解压时文件名会乱码吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。Zipper 按 Windows 期望的方式（NFC 并带 UTF-8 标志）保存文件名，在文件资源管理器中可正确显示。"}}, {"@type": "Question", "name": "能创建 RAR 吗？", "acceptedAnswer": {"@type": "Answer", "text": "RAR 仅支持打开和解压。创建时请使用 ZIP 或 7Z。"}}, {"@type": "Question", "name": "会联网或上传我的文件吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。所有操作都在你的 Mac 上完成。"}}, {"@type": "Question", "name": "如何切换语言？", "acceptedAnswer": {"@type": "Answer", "text": "默认跟随系统语言。可在 偏好设置 → 通用 → 语言 中更改，立即生效。"}}, {"@type": "Question", "name": "会公开源代码吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。Zipper 是只发布可执行应用的免费软件，不公开源代码。"}}]}</script>
 </head>
 <body>
@@ -43,7 +43,7 @@
       <a class="btn btn-primary" href="https://github.com/jayusop/Zipper/releases/latest">⬇ 免费下载</a>
       <a class="btn btn-ghost" href="https://github.com/jayusop/Zipper">在 GitHub 上查看</a>
     </div>
-    <div class="meta">版本 0.1.0 · macOS 12 Monterey 或更高版本 · Apple Silicon / Intel</div>
+    <div class="meta">版本 1.0.0 · macOS 12 Monterey 或更高版本 · Apple Silicon / Intel</div>
   </div>
   <img class="icon" src="../assets/icon.png" alt="Zipper" width="512" height="512">
 </div></div>
@@ -51,13 +51,13 @@
 <section id="features"><div class="wrap">
   <h2>主要功能</h2>
   <p class="sub">常用操作一键完成，详细设置按需使用。</p>
-  <div class="grid"><div class="card"><div class="ico">🗜️</div><h3>创建、解压与编辑</h3><p>创建和解压 ZIP、7Z、TAR、GZ 压缩文件。无需解压即可在 ZIP 中添加、删除和重命名文件。</p></div><div class="card"><div class="ico">📂</div><h3>支持 30 多种格式</h3><p>RAR、EGG、ALZ、ISO、CAB、LZH 以及许多旧格式，收到的压缩文件大多可以直接打开。</p></div><div class="card"><div class="ico">🔤</div><h3>文件名不乱码</h3><p>文件名以合成形式（NFC）保存，并自动识别 GBK、CP949、Shift-JIS 等代码页，Windows 压缩文件也能正确显示。</p></div><div class="card"><div class="ico">🔒</div><h3>AES-256 加密</h3><p>可为 ZIP 和 7Z 设置 AES-256 密码，7Z 还能隐藏文件名。也可解压加密的 EGG（AES/LEA）和 ALZ。</p></div><div class="card"><div class="ico">✨</div><h3>智能解压</h3><p>如果内容都在一个文件夹内则就地解压，否则先创建以压缩文件命名的文件夹，避免文件散落。</p></div><div class="card"><div class="ico">✂️</div><h3>分卷压缩</h3><p>可按邮件附件（25MB）、CD、DVD、FAT32（4GB）等大小分卷，分卷文件也能直接打开。</p></div><div class="card"><div class="ico">🧪</div><h3>完整性测试与校验和</h3><p>检测压缩文件是否损坏，并查看任意文件的 CRC32、MD5、SHA-1、SHA-256。</p></div><div class="card"><div class="ico">🧹</div><h3>干净的压缩包</h3><p>自动排除 .DS_Store、__MACOSX 和资源分支，压缩包在 Windows 上也干净整洁。</p></div><div class="card"><div class="ico">🌐</div><h3>4 种语言 · 深色模式</h3><p>支持韩语、英语、中文和日语，默认跟随系统语言。可选浅色/深色主题。</p></div></div>
+  <div class="grid"><div class="card"><div class="ico">🗜️</div><h3>创建、解压与编辑</h3><p>创建和解压 ZIP、7Z、TAR、GZ。拖到窗口即可——压缩文件会被打开，其他文件会被压缩。无需解压即可编辑 ZIP。</p></div><div class="card"><div class="ico">📂</div><h3>支持 30 多种格式</h3><p>RAR、EGG、ALZ、ISO、CAB、LZH 以及许多旧格式，收到的压缩文件大多可以直接打开。</p></div><div class="card"><div class="ico">🔤</div><h3>文件名不乱码</h3><p>文件名以合成形式（NFC）保存，并自动识别 GBK、CP949、Shift-JIS 等代码页，Windows 压缩文件也能正确显示。</p></div><div class="card"><div class="ico">🔒</div><h3>AES-256 加密</h3><p>可为 ZIP 和 7Z 设置 AES-256 密码，7Z 还能隐藏文件名。也可解压加密的 EGG（AES/LEA）和 ALZ。</p></div><div class="card"><div class="ico">✨</div><h3>智能解压</h3><p>如果内容都在一个文件夹内则就地解压，否则先创建以压缩文件命名的文件夹，避免文件散落。</p></div><div class="card"><div class="ico">✂️</div><h3>分卷压缩</h3><p>可按邮件附件（25MB）、CD、DVD、FAT32（4GB）等大小分卷，分卷文件也能直接打开。</p></div><div class="card"><div class="ico">🧪</div><h3>完整性测试与校验和</h3><p>检测压缩文件是否损坏，并查看任意文件的 CRC32、MD5、SHA-1、SHA-256。</p></div><div class="card"><div class="ico">🧹</div><h3>干净的压缩包</h3><p>自动排除 .DS_Store、__MACOSX 和资源分支，压缩包在 Windows 上也干净整洁。</p></div><div class="card"><div class="ico">🌐</div><h3>4 种语言 · 深色模式</h3><p>支持韩语、英语、中文和日语，默认跟随系统语言。可选浅色/深色主题。</p></div></div>
 </div></section>
 
 <section class="alt"><div class="wrap">
-  <figure class="shot" style="margin:0 auto"><div class="bar"><i></i><i></i><i></i></div>
-    <img src="../assets/screenshot-start.png" alt="开始界面 — 打开压缩文件、一键压缩和帮助集中在一处" width="1402" height="1048" loading="lazy"></figure>
-  <p class="caption">开始界面 — 打开压缩文件、一键压缩和帮助集中在一处</p>
+  <figure class="shot" style="margin:0 auto">
+    <img src="../assets/screenshot-start.png" alt="开始界面 — 打开压缩文件、新建压缩文件、拖放文件、快速 ZIP/7Z 压缩集中在一处" width="1952" height="1324" loading="lazy"></figure>
+  <p class="caption">开始界面 — 打开压缩文件、新建压缩文件、拖放文件、快速 ZIP/7Z 压缩集中在一处</p>
 </div></section>
 
 <section id="formats"><div class="wrap">

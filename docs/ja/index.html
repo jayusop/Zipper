@@ -24,7 +24,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Zipper", "operatingSystem": "macOS 12+", "applicationCategory": "UtilitiesApplication", "softwareVersion": "0.1.0", "description": "Zipper は macOS 用の無料圧縮・解凍ソフトです。ZIP、7Z、TAR を作成し、RAR、EGG、ALZ、ISO など 30 以上の形式を展開できます。Windows でもファイル名が文字化けしません。", "url": "https://jayusop.github.io/Zipper/ja/", "downloadUrl": "https://github.com/jayusop/Zipper/releases/latest", "image": "https://jayusop.github.io/Zipper/assets/icon.png", "inLanguage": "ja", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Zipper", "operatingSystem": "macOS 12+", "applicationCategory": "UtilitiesApplication", "softwareVersion": "1.0.0", "description": "Zipper は macOS 用の無料圧縮・解凍ソフトです。ZIP、7Z、TAR を作成し、RAR、EGG、ALZ、ISO など 30 以上の形式を展開できます。Windows でもファイル名が文字化けしません。", "url": "https://jayusop.github.io/Zipper/ja/", "downloadUrl": "https://github.com/jayusop/Zipper/releases/latest", "image": "https://jayusop.github.io/Zipper/assets/icon.png", "inLanguage": "ja", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "本当に無料ですか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。個人・法人を問わず無料で使えます。"}}, {"@type": "Question", "name": "ALZ や EGG を展開できますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。分割 ALZ（.a00、.a01…）、パスワード付きファイル、AES/LEA 暗号化・ソリッド・分割の EGG にも対応しています。ALZ と EGG の作成には対応していません。"}}, {"@type": "Question", "name": "Windows で展開するとファイル名が文字化けしませんか？", "acceptedAnswer": {"@type": "Answer", "text": "しません。Zipper は Windows が想定する形式（NFC と UTF-8 フラグ）でファイル名を保存するため、エクスプローラーでも正しく表示されます。"}}, {"@type": "Question", "name": "RAR を作成できますか？", "acceptedAnswer": {"@type": "Answer", "text": "RAR は開く・展開のみです。作成には ZIP か 7Z をお使いください。"}}, {"@type": "Question", "name": "インターネットに接続したり、ファイルを送信したりしますか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。すべての処理は Mac の中だけで行われます。"}}, {"@type": "Question", "name": "言語はどう変更しますか？", "acceptedAnswer": {"@type": "Answer", "text": "既定ではシステムの言語に従います。環境設定 → 一般 → 言語 で変更するとすぐに反映されます。"}}, {"@type": "Question", "name": "ソースコードは公開されていますか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。Zipper は実行ファイル（アプリ）のみを配布するフリーウェアで、ソースコードは公開していません。"}}]}</script>
 </head>
 <body>
@@ -43,7 +43,7 @@
       <a class="btn btn-primary" href="https://github.com/jayusop/Zipper/releases/latest">⬇ 無料ダウンロード</a>
       <a class="btn btn-ghost" href="https://github.com/jayusop/Zipper">GitHub で見る</a>
     </div>
-    <div class="meta">バージョン 0.1.0 · macOS 12 Monterey 以降 · Apple Silicon / Intel</div>
+    <div class="meta">バージョン 1.0.0 · macOS 12 Monterey 以降 · Apple Silicon / Intel</div>
   </div>
   <img class="icon" src="../assets/icon.png" alt="Zipper" width="512" height="512">
 </div></div>
@@ -51,13 +51,13 @@
 <section id="features"><div class="wrap">
   <h2>主な機能</h2>
   <p class="sub">よく使う操作はワンクリックで、細かい設定は必要なときだけ。</p>
-  <div class="grid"><div class="card"><div class="ico">🗜️</div><h3>作成・展開・編集</h3><p>ZIP、7Z、TAR、GZ アーカイブを作成・展開できます。ZIP は展開せずにファイルの追加・削除・名前変更ができます。</p></div><div class="card"><div class="ico">📂</div><h3>30 以上の形式に対応</h3><p>RAR、EGG、ALZ、ISO、CAB、LZH など古い形式まで、受け取ったアーカイブのほとんどをすぐに開けます。</p></div><div class="card"><div class="ico">🔤</div><h3>文字化けしないファイル名</h3><p>ファイル名を合成済み Unicode（NFC）で保存し、Shift-JIS や CP949 などのコードページを自動検出。Windows のアーカイブも正しく表示します。</p></div><div class="card"><div class="ico">🔒</div><h3>AES-256 暗号化</h3><p>ZIP と 7Z に AES-256 のパスワードを設定でき、7Z ではファイル名も隠せます。暗号化された EGG（AES/LEA）や ALZ も展開できます。</p></div><div class="card"><div class="ico">✨</div><h3>スマート展開</h3><p>中身が 1 つのフォルダに入っていればその場に、そうでなければアーカイブ名のフォルダを作って展開するので、ファイルが散らばりません。</p></div><div class="card"><div class="ico">✂️</div><h3>分割圧縮</h3><p>メール添付（25MB）、CD、DVD、FAT32（4GB）など好きなサイズで分割でき、分割ファイルもそのまま開けます。</p></div><div class="card"><div class="ico">🧪</div><h3>テストとチェックサム</h3><p>アーカイブの破損をテストし、任意のファイルの CRC32・MD5・SHA-1・SHA-256 を確認できます。</p></div><div class="card"><div class="ico">🧹</div><h3>きれいなアーカイブ</h3><p>.DS_Store、__MACOSX、リソースフォークを除いて圧縮するので、Windows でもすっきり表示されます。</p></div><div class="card"><div class="ico">🌐</div><h3>4 言語・ダークモード</h3><p>日本語、英語、韓国語、中国語に対応し、システムの言語に従います。ライト／ダークテーマを選べます。</p></div></div>
+  <div class="grid"><div class="card"><div class="ico">🗜️</div><h3>作成・展開・編集</h3><p>ZIP、7Z、TAR、GZ を作成・展開できます。ウインドウにドロップすればアーカイブは開き、その他のファイルは圧縮。ZIP は展開せずに編集できます。</p></div><div class="card"><div class="ico">📂</div><h3>30 以上の形式に対応</h3><p>RAR、EGG、ALZ、ISO、CAB、LZH など古い形式まで、受け取ったアーカイブのほとんどをすぐに開けます。</p></div><div class="card"><div class="ico">🔤</div><h3>文字化けしないファイル名</h3><p>ファイル名を合成済み Unicode（NFC）で保存し、Shift-JIS や CP949 などのコードページを自動検出。Windows のアーカイブも正しく表示します。</p></div><div class="card"><div class="ico">🔒</div><h3>AES-256 暗号化</h3><p>ZIP と 7Z に AES-256 のパスワードを設定でき、7Z ではファイル名も隠せます。暗号化された EGG（AES/LEA）や ALZ も展開できます。</p></div><div class="card"><div class="ico">✨</div><h3>スマート展開</h3><p>中身が 1 つのフォルダに入っていればその場に、そうでなければアーカイブ名のフォルダを作って展開するので、ファイルが散らばりません。</p></div><div class="card"><div class="ico">✂️</div><h3>分割圧縮</h3><p>メール添付（25MB）、CD、DVD、FAT32（4GB）など好きなサイズで分割でき、分割ファイルもそのまま開けます。</p></div><div class="card"><div class="ico">🧪</div><h3>テストとチェックサム</h3><p>アーカイブの破損をテストし、任意のファイルの CRC32・MD5・SHA-1・SHA-256 を確認できます。</p></div><div class="card"><div class="ico">🧹</div><h3>きれいなアーカイブ</h3><p>.DS_Store、__MACOSX、リソースフォークを除いて圧縮するので、Windows でもすっきり表示されます。</p></div><div class="card"><div class="ico">🌐</div><h3>4 言語・ダークモード</h3><p>日本語、英語、韓国語、中国語に対応し、システムの言語に従います。ライト／ダークテーマを選べます。</p></div></div>
 </div></section>
 
 <section class="alt"><div class="wrap">
-  <figure class="shot" style="margin:0 auto"><div class="bar"><i></i><i></i><i></i></div>
-    <img src="../assets/screenshot-start.png" alt="スタート画面 — アーカイブを開く、ワンクリック圧縮、ヘルプをひとまとめに" width="1402" height="1048" loading="lazy"></figure>
-  <p class="caption">スタート画面 — アーカイブを開く、ワンクリック圧縮、ヘルプをひとまとめに</p>
+  <figure class="shot" style="margin:0 auto">
+    <img src="../assets/screenshot-start.png" alt="スタート画面 — アーカイブを開く、新規作成、ドロップ、クイック ZIP/7Z 圧縮をひとまとめに" width="1952" height="1324" loading="lazy"></figure>
+  <p class="caption">スタート画面 — アーカイブを開く、新規作成、ドロップ、クイック ZIP/7Z 圧縮をひとまとめに</p>
 </div></section>
 
 <section id="formats"><div class="wrap">
