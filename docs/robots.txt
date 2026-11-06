@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jayusop.github.io/Zipper/sitemap.xml
